@@ -1,0 +1,16 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/tailwindcss/app.css -o ./css/app.css --watch"
+  },
+  "keywords": [],
+  "author": "Tomas Emanuel Ramirez Abarca",
+  "license": "ISC"
+}

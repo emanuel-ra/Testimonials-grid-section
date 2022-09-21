@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    :root{
+        --primary-violet: hsl(263, 55%, 52%);
+        --primary-grayish-blue: hsl(217, 19%, 35%);
+        --primary-blackish-blue: hsl(219, 29%, 14%);
+        --white: hsl(0, 0%, 100%);
+        --primary-light-gray: hsl(0, 0%, 81%);
+        --primary-light-grayish-blue: hsl(210, 46%, 95%);
+    }
+}
+
+@layer components{
+    *{
+        @apply font-barlow-semi-condensed
+    }
+    main {
+        @apply w-screen min-h-screen bg-primary-light-grayish-blue flex flex-col justify-center items-center
+    }
+    .testimonials-grid{
+        @apply w-10/12 grid grid-cols-1 lg:grid-cols-4 gap-10
+    }
+    .card{
+        @apply rounded-lg p-5 md:p-10 shadow-2xl transition-all delay-150 duration-75 ease-in
+    }
+    .card-header{
+        @apply w-full flex gap-2
+    }
+    .card-header img{
+        @apply rounded-full
+    }
+    .card-header span:first-child{
+        @apply flex flex-col
+    }
+    .card-body{
+        @apply flex flex-col space-y-5 mt-5
+    }
+    .footer{
+        @apply w-full text-center p-2
+    }
+}
